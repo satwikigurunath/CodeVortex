@@ -1,0 +1,604 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [7 0 R 9 0 R 11 0 R 13 0 R 15 0 R] /Count 5 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+6 0 obj
+<< /Length 7213 >>
+stream
+q 0.060 0.090 0.160 rg 45.00 714.89 505.28 82.00 re f Q
+q 0.020 0.710 0.830 rg 45.00 714.89 5.00 82.00 re f Q
+BT /F2 8.5 Tf 0.130 0.830 0.930 rg 61.00 776.89 Td (PROJECT BLUEPRINT & 7-DAY STEP-BY-STEP ROADMAP) Tj ET
+BT /F2 16 Tf 1.000 1.000 1.000 rg 61.00 756.89 Td (CodeVortex - Enter the Arena. Find Your Squad. Dominate Tech Fests.) Tj ET
+BT /F1 9.5 Tf 0.800 0.840 0.900 rg 61.00 739.89 Td (A multi-college web application built with HTML5, CSS3, Vanilla JavaScript,) Tj ET
+BT /F1 9.5 Tf 0.800 0.840 0.900 rg 61.00 726.89 Td (Node.js/Express, and MongoDB for discovering competitions and forging hackathon) Tj ET
+q 0.310 0.270 0.900 rg 45.00 678.89 62.00 17.00 re f Q
+BT /F2 8.5 Tf 1.000 1.000 1.000 rg 52.00 683.89 Td (OVERVIEW) Tj ET
+BT /F2 13 Tf 0.060 0.090 0.160 rg 115.00 682.89 Td (What We Are Building & Core Choices) Tj ET
+q 0.820 0.860 0.910 rg 45.00 672.89 505.28 1.00 re f Q
+BT /F1 9.8 Tf 0.150 0.200 0.280 rg 45.00 651.89 Td (CodeVortex is a web platform where engineering college students can log in, explore upcoming tech) Tj ET
+BT /F1 9.8 Tf 0.150 0.200 0.280 rg 45.00 638.39 Td (fests, hackathons, and competitions across colleges, find peers who share their technical skills or) Tj ET
+BT /F1 9.8 Tf 0.150 0.200 0.280 rg 45.00 624.89 Td (interests, and team up together.) Tj ET
+BT /F2 10 Tf 0.310 0.270 0.900 rg 55.00 607.39 Td (*) Tj ET
+BT /F1 9.5 Tf 0.120 0.160 0.230 rg 65.00 607.39 Td ([Scope - Multi-College Network]: Students from any engineering college can join, add their college) Tj ET
+BT /F1 9.5 Tf 0.120 0.160 0.230 rg 65.00 594.39 Td (& city, and filter events or teammates either within their own campus or across all colleges.) Tj ET
+BT /F2 10 Tf 0.310 0.270 0.900 rg 55.00 579.39 Td (*) Tj ET
+BT /F1 9.5 Tf 0.120 0.160 0.230 rg 65.00 579.39 Td ([Event Posting - Official + Community]: Verified college clubs/organizers can post official tech) Tj ET
+BT /F1 9.5 Tf 0.120 0.160 0.230 rg 65.00 566.39 Td (fests, and regular students can also share external hackathons/competitions they want others to) Tj ET
+BT /F1 9.5 Tf 0.120 0.160 0.230 rg 65.00 553.39 Td (join.) Tj ET
+BT /F2 10 Tf 0.310 0.270 0.900 rg 55.00 538.39 Td (*) Tj ET
+BT /F1 9.5 Tf 0.120 0.160 0.230 rg 65.00 538.39 Td ([Teammate Discovery - Student Directory]: A searchable directory of students filterable by Skills) Tj ET
+BT /F1 9.5 Tf 0.120 0.160 0.230 rg 65.00 525.39 Td (\(React, Python, AI/ML, Robotics, IoT, UI/UX\), Interests, College, Branch, and Year.) Tj ET
+BT /F2 10 Tf 0.310 0.270 0.900 rg 55.00 510.39 Td (*) Tj ET
+BT /F1 9.5 Tf 0.120 0.160 0.230 rg 65.00 510.39 Td ([Connecting - Team-Up Requests & Chat]: Students send a 'Team-Up Request' with a short pitch note) Tj ET
+BT /F1 9.5 Tf 0.120 0.160 0.230 rg 65.00 497.39 Td (and target competition. Once accepted, both students see each other's contact links \(GitHub,) Tj ET
+BT /F1 9.5 Tf 0.120 0.160 0.230 rg 65.00 484.39 Td (LinkedIn, Discord, WhatsApp\) and can chat directly inside the app.) Tj ET
+BT /F2 10 Tf 0.310 0.270 0.900 rg 55.00 469.39 Td (*) Tj ET
+BT /F1 9.5 Tf 0.120 0.160 0.230 rg 65.00 469.39 Td ([UI Theme & Database]: Dark Tech / Cyberpunk-inspired Modern UI with neon accents, powered by) Tj ET
+BT /F1 9.5 Tf 0.120 0.160 0.230 rg 65.00 456.39 Td (Node.js + Express and Local MongoDB \(with an automatic seed script and local fallback store\).) Tj ET
+q 0.310 0.270 0.900 rg 45.00 430.39 54.00 17.00 re f Q
+BT /F2 8.5 Tf 1.000 1.000 1.000 rg 52.00 435.39 Td (STEP 1) Tj ET
+BT /F2 13 Tf 0.060 0.090 0.160 rg 107.00 434.39 Td (Project Folder Structure & Setup) Tj ET
+q 0.820 0.860 0.910 rg 45.00 424.39 505.28 1.00 re f Q
+BT /F1 9.8 Tf 0.150 0.200 0.280 rg 45.00 403.39 Td (We will create the project inside C:\\Users\\sigsi\\.gemini\\antigravity\\scratch\\codevortex with the) Tj ET
+BT /F1 9.8 Tf 0.150 0.200 0.280 rg 45.00 389.89 Td (following structure:) Tj ET
+q 0.060 0.090 0.160 rg 45.00 192.39 505.28 189.00 re f Q
+BT /F3 8.5 Tf 0.880 0.910 0.960 rg 57.00 366.39 Td (codevortex/) Tj ET
+BT /F3 8.5 Tf 0.880 0.910 0.960 rg 57.00 353.89 Td (|-- package.json               # Dependencies: express, mongoose, bcryptjs, jsonwebtoken, cors) Tj ET
+BT /F3 8.5 Tf 0.880 0.910 0.960 rg 57.00 341.39 Td (|-- server.js                  # Express backend server, REST API routes, MongoDB + fallback) Tj ET
+BT /F3 8.5 Tf 0.880 0.910 0.960 rg 57.00 328.89 Td (|-- models/) Tj ET
+BT /F3 8.5 Tf 0.880 0.910 0.960 rg 57.00 316.39 Td (|   |-- User.js                # Student & Admin schema \(privacy, achievements, portfolio\)) Tj ET
+BT /F3 8.5 Tf 0.880 0.910 0.960 rg 57.00 303.89 Td (|   |-- Event.js               # Tech Fest schema \(entryFee, registrationUrl, bookmarks\)) Tj ET
+BT /F3 8.5 Tf 0.880 0.910 0.960 rg 57.00 291.39 Td (|   |-- TeamPost.js            # Group Team Lobby schema \(open team roles & member count\)) Tj ET
+BT /F3 8.5 Tf 0.880 0.910 0.960 rg 57.00 278.89 Td (|   `-- TeamRequest.js         # Team-Up invite & direct chat messages schema) Tj ET
+BT /F3 8.5 Tf 0.880 0.910 0.960 rg 57.00 266.39 Td (|-- seed/) Tj ET
+BT /F3 8.5 Tf 0.880 0.910 0.960 rg 57.00 253.89 Td (|   `-- sampleData.js          # Pre-loaded realistic colleges, tech fests & student profiles) Tj ET
+BT /F3 8.5 Tf 0.880 0.910 0.960 rg 57.00 241.39 Td (`-- public/) Tj ET
+BT /F3 8.5 Tf 0.880 0.910 0.960 rg 57.00 228.89 Td (    |-- index.html             # Single-page responsive HTML layout & interactive modals) Tj ET
+BT /F3 8.5 Tf 0.880 0.910 0.960 rg 57.00 216.39 Td (    |-- css/styles.css         # Dark Tech / Cyberpunk neon styling & responsive grid) Tj ET
+BT /F3 8.5 Tf 0.880 0.910 0.960 rg 57.00 203.89 Td (    `-- js/app.js              # Frontend state, API calls, multi-filter search & chat) Tj ET
+q 0.310 0.270 0.900 rg 45.00 162.39 54.00 17.00 re f Q
+BT /F2 8.5 Tf 1.000 1.000 1.000 rg 52.00 167.39 Td (STEP 2) Tj ET
+BT /F2 13 Tf 0.060 0.090 0.160 rg 107.00 166.39 Td (Database Design \(MongoDB Collections\)) Tj ET
+q 0.820 0.860 0.910 rg 45.00 156.39 505.28 1.00 re f Q
+BT /F2 10.8 Tf 0.190 0.180 0.510 rg 45.00 132.39 Td (2.1. User Schema \(Students & Club Organizers\)) Tj ET
+q 0.930 0.950 0.970 rg 0.780 0.830 0.880 RG 0.6 w 45.00 104.39 120.00 18.00 re B Q
+BT /F2 9.2 Tf 0.060 0.090 0.160 rg 51.00 109.39 Td (Field) Tj ET
+q 0.930 0.950 0.970 rg 0.780 0.830 0.880 RG 0.6 w 165.00 104.39 90.00 18.00 re B Q
+BT /F2 9.2 Tf 0.060 0.090 0.160 rg 171.00 109.39 Td (Type) Tj ET
+q 0.930 0.950 0.970 rg 0.780 0.830 0.880 RG 0.6 w 255.00 104.39 295.00 18.00 re B Q
+BT /F2 9.2 Tf 0.060 0.090 0.160 rg 261.00 109.39 Td (Description / Example) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 45.00 73.39 120.00 31.00 re B Q
+BT /F3 8.7 Tf 0.120 0.160 0.230 rg 51.00 92.39 Td (collegeId) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 165.00 73.39 90.00 31.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 171.00 92.39 Td (String \(Unique\)) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 255.00 73.39 295.00 31.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 261.00 92.39 Td (Student Roll No. or Admin ID used for login \(hidden publicly) Tj ET
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 261.00 80.39 Td (by default\)) Tj ET
+BT /F1 8.5 Tf 0.45 0.50 0.58 rg 45.00 24.00 Td (CodeVortex - Step-by-Step Development Plan   |   Page 1 of 5) Tj ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 6 0 R >>
+endobj
+8 0 obj
+<< /Length 15535 >>
+stream
+q 0.930 0.950 0.970 rg 0.780 0.830 0.880 RG 0.6 w 45.00 778.89 120.00 18.00 re B Q
+BT /F2 9.2 Tf 0.060 0.090 0.160 rg 51.00 783.89 Td (Field) Tj ET
+q 0.930 0.950 0.970 rg 0.780 0.830 0.880 RG 0.6 w 165.00 778.89 90.00 18.00 re B Q
+BT /F2 9.2 Tf 0.060 0.090 0.160 rg 171.00 783.89 Td (Type) Tj ET
+q 0.930 0.950 0.970 rg 0.780 0.830 0.880 RG 0.6 w 255.00 778.89 295.00 18.00 re B Q
+BT /F2 9.2 Tf 0.060 0.090 0.160 rg 261.00 783.89 Td (Description / Example) Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 45.00 747.89 120.00 31.00 re B Q
+BT /F3 8.7 Tf 0.120 0.160 0.230 rg 51.00 766.89 Td (username) Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 165.00 747.89 90.00 31.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 171.00 766.89 Td (String) Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 255.00 747.89 295.00 31.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 261.00 766.89 Td (Any custom display name / handle chosen by the user \(e.g.,) Tj ET
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 261.00 754.89 Td ('cyber_ninja'\)) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 45.00 716.89 120.00 31.00 re B Q
+BT /F3 8.7 Tf 0.120 0.160 0.230 rg 51.00 735.89 Td (name) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 165.00 716.89 90.00 31.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 171.00 735.89 Td (String) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 255.00 716.89 295.00 31.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 261.00 735.89 Td (Real full name \(kept hidden unless user toggles 'Show Real) Tj ET
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 261.00 723.89 Td (Name'\)) Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 45.00 685.89 120.00 31.00 re B Q
+BT /F3 8.7 Tf 0.120 0.160 0.230 rg 51.00 704.89 Td (userNumber) Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 165.00 685.89 90.00 31.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 171.00 704.89 Td (String) Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 255.00 685.89 295.00 31.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 261.00 704.89 Td (User number / phone / ID \(kept hidden unless user toggles) Tj ET
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 261.00 692.89 Td (visibility on\)) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 45.00 654.89 120.00 31.00 re B Q
+BT /F3 8.7 Tf 0.120 0.160 0.230 rg 51.00 673.89 Td (privacy) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 165.00 654.89 90.00 31.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 171.00 673.89 Td (Object) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 255.00 654.89 295.00 31.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 261.00 673.89 Td ({ showRealName: false, showUserNumber: false } - user) Tj ET
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 261.00 661.89 Td (controls visibility) Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 45.00 635.89 120.00 19.00 re B Q
+BT /F3 8.7 Tf 0.120 0.160 0.230 rg 51.00 642.89 Td (passwordHash) Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 165.00 635.89 90.00 19.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 171.00 642.89 Td (String) Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 255.00 635.89 295.00 19.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 261.00 642.89 Td (Password securely hashed with bcryptjs) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 45.00 616.89 120.00 19.00 re B Q
+BT /F3 8.7 Tf 0.120 0.160 0.230 rg 51.00 623.89 Td (role) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 165.00 616.89 90.00 19.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 171.00 623.89 Td (String) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 255.00 616.89 295.00 19.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 261.00 623.89 Td ('student' or 'organizer' \(College Admin / Fest Organizer\)) Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 45.00 585.89 120.00 31.00 re B Q
+BT /F3 8.7 Tf 0.120 0.160 0.230 rg 51.00 604.89 Td (college) Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 165.00 585.89 90.00 31.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 171.00 604.89 Td (String) Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 255.00 585.89 295.00 31.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 261.00 604.89 Td (Engineering college name \(e.g., 'IIT Bombay', 'NIT Trichy',) Tj ET
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 261.00 592.89 Td ('VIT Vellore'\)) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 45.00 566.89 120.00 19.00 re B Q
+BT /F3 8.7 Tf 0.120 0.160 0.230 rg 51.00 573.89 Td (city) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 165.00 566.89 90.00 19.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 171.00 573.89 Td (String) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 255.00 566.89 295.00 19.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 261.00 573.89 Td (City / Region \(e.g., 'Mumbai', 'Bengaluru', 'Chennai'\)) Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 45.00 535.89 120.00 31.00 re B Q
+BT /F3 8.7 Tf 0.120 0.160 0.230 rg 51.00 554.89 Td (branch) Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 165.00 535.89 90.00 31.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 171.00 554.89 Td (String) Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 255.00 535.89 295.00 31.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 261.00 554.89 Td (Engineering branch \(e.g., 'CSE', 'ECE', 'AI & DS',) Tj ET
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 261.00 542.89 Td ('Mechanical'\)) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 45.00 516.89 120.00 19.00 re B Q
+BT /F3 8.7 Tf 0.120 0.160 0.230 rg 51.00 523.89 Td (year) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 165.00 516.89 90.00 19.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 171.00 523.89 Td (Number) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 255.00 516.89 295.00 19.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 261.00 523.89 Td (Current study year \(1, 2, 3, or 4\)) Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 45.00 485.89 120.00 31.00 re B Q
+BT /F3 8.7 Tf 0.120 0.160 0.230 rg 51.00 504.89 Td (bio) Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 165.00 485.89 90.00 31.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 171.00 504.89 Td (String) Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 255.00 485.89 295.00 31.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 261.00 504.89 Td (Short pitch about what competitions and projects they like) Tj ET
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 261.00 492.89 Td (to build) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 45.00 454.89 120.00 31.00 re B Q
+BT /F3 8.7 Tf 0.120 0.160 0.230 rg 51.00 473.89 Td (skills) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 165.00 454.89 90.00 31.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 171.00 473.89 Td ([String]) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 255.00 454.89 295.00 31.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 261.00 473.89 Td (Technical skills \(e.g., ['React', 'Node.js', 'Python',) Tj ET
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 261.00 461.89 Td ('PyTorch', 'ROS']\)) Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 45.00 423.89 120.00 31.00 re B Q
+BT /F3 8.7 Tf 0.120 0.160 0.230 rg 51.00 442.89 Td (interests) Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 165.00 423.89 90.00 31.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 171.00 442.89 Td ([String]) Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 255.00 423.89 295.00 31.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 261.00 442.89 Td (Competition areas \(e.g., ['Hackathons', 'AI/ML', 'Robotics',) Tj ET
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 261.00 430.89 Td ('Web3']\)) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 45.00 392.89 120.00 31.00 re B Q
+BT /F3 8.7 Tf 0.120 0.160 0.230 rg 51.00 411.89 Td (achievements) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 165.00 392.89 90.00 31.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 171.00 411.89 Td ([String]) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 255.00 392.89 295.00 31.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 261.00 411.89 Td (Past Hackathon Wins & awards \(e.g., ['SIH 2025 Winner',) Tj ET
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 261.00 399.89 Td ('IITB Robotics #1']\)) Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 45.00 373.89 120.00 19.00 re B Q
+BT /F3 8.7 Tf 0.120 0.160 0.230 rg 51.00 380.89 Td (portfolioUrl) Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 165.00 373.89 90.00 19.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 171.00 380.89 Td (String) Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 255.00 373.89 295.00 19.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 261.00 380.89 Td (Link to personal portfolio website or project showcase) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 45.00 354.89 120.00 19.00 re B Q
+BT /F3 8.7 Tf 0.120 0.160 0.230 rg 51.00 361.89 Td (resumeUrl) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 165.00 354.89 90.00 19.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 171.00 361.89 Td (String) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 255.00 354.89 295.00 19.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 261.00 361.89 Td (Link to student's Resume / CV) Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 45.00 335.89 120.00 19.00 re B Q
+BT /F3 8.7 Tf 0.120 0.160 0.230 rg 51.00 342.89 Td (hostelOrCampus) Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 165.00 335.89 90.00 19.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 171.00 342.89 Td (String) Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 255.00 335.89 295.00 19.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 261.00 342.89 Td (Optional Hostel / Campus / Accommodation info) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 45.00 316.89 120.00 19.00 re B Q
+BT /F3 8.7 Tf 0.120 0.160 0.230 rg 51.00 323.89 Td (lookingForTeam) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 165.00 316.89 90.00 19.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 171.00 323.89 Td (Boolean) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 255.00 316.89 295.00 19.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 261.00 323.89 Td (Toggle that displays an active 'Looking for Team' neon badge) Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 45.00 297.89 120.00 19.00 re B Q
+BT /F3 8.7 Tf 0.120 0.160 0.230 rg 51.00 304.89 Td (bookmarkedEvents) Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 165.00 297.89 90.00 19.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 171.00 304.89 Td ([ObjectId]) Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 255.00 297.89 295.00 19.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 261.00 304.89 Td (List of saved/bookmarked Tech Fests & Competitions) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 45.00 266.89 120.00 31.00 re B Q
+BT /F3 8.7 Tf 0.120 0.160 0.230 rg 51.00 285.89 Td (contactLinks) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 165.00 266.89 90.00 31.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 171.00 285.89 Td (Object) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 255.00 266.89 295.00 31.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 261.00 285.89 Td ({ github, linkedin, discord, whatsapp } \(unlocked when) Tj ET
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 261.00 273.89 Td (request accepted\)) Tj ET
+BT /F2 10.8 Tf 0.190 0.180 0.510 rg 45.00 244.89 Td (2.2. Event Schema \(Tech Fests, Hackathons & Competitions\)) Tj ET
+q 0.930 0.950 0.970 rg 0.780 0.830 0.880 RG 0.6 w 45.00 216.89 120.00 18.00 re B Q
+BT /F2 9.2 Tf 0.060 0.090 0.160 rg 51.00 221.89 Td (Field) Tj ET
+q 0.930 0.950 0.970 rg 0.780 0.830 0.880 RG 0.6 w 165.00 216.89 90.00 18.00 re B Q
+BT /F2 9.2 Tf 0.060 0.090 0.160 rg 171.00 221.89 Td (Type) Tj ET
+q 0.930 0.950 0.970 rg 0.780 0.830 0.880 RG 0.6 w 255.00 216.89 295.00 18.00 re B Q
+BT /F2 9.2 Tf 0.060 0.090 0.160 rg 261.00 221.89 Td (Description / Example) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 45.00 185.89 120.00 31.00 re B Q
+BT /F3 8.7 Tf 0.120 0.160 0.230 rg 51.00 204.89 Td (title) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 165.00 185.89 90.00 31.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 171.00 204.89 Td (String) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 255.00 185.89 295.00 31.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 261.00 204.89 Td (Name of the fest or competition \(e.g., 'Smart India) Tj ET
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 261.00 192.89 Td (Hackathon 2026'\)) Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 45.00 166.89 120.00 19.00 re B Q
+BT /F3 8.7 Tf 0.120 0.160 0.230 rg 51.00 173.89 Td (organizerCollege) Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 165.00 166.89 90.00 19.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 171.00 173.89 Td (String) Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 255.00 166.89 295.00 19.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 261.00 173.89 Td (Host engineering college or organization) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 45.00 147.89 120.00 19.00 re B Q
+BT /F3 8.7 Tf 0.120 0.160 0.230 rg 51.00 154.89 Td (city) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 165.00 147.89 90.00 19.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 171.00 154.89 Td (String) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 255.00 147.89 295.00 19.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 261.00 154.89 Td (City location or 'Online') Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 45.00 128.89 120.00 19.00 re B Q
+BT /F3 8.7 Tf 0.120 0.160 0.230 rg 51.00 135.89 Td (mode) Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 165.00 128.89 90.00 19.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 171.00 135.89 Td (String) Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 255.00 128.89 295.00 19.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 261.00 135.89 Td ('Offline', 'Online', or 'Hybrid') Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 45.00 97.89 120.00 31.00 re B Q
+BT /F3 8.7 Tf 0.120 0.160 0.230 rg 51.00 116.89 Td (category) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 165.00 97.89 90.00 31.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 171.00 116.89 Td (String) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 255.00 97.89 295.00 31.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 261.00 116.89 Td ('Hackathon', 'Tech Fest', 'Robotics', 'Coding Contest',) Tj ET
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 261.00 104.89 Td ('Paper/Project') Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 45.00 78.89 120.00 19.00 re B Q
+BT /F3 8.7 Tf 0.120 0.160 0.230 rg 51.00 85.89 Td (isOfficial) Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 165.00 78.89 90.00 19.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 171.00 85.89 Td (Boolean) Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 255.00 78.89 295.00 19.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 261.00 85.89 Td (true = Official Club Fest; false = Shared by a Student) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 45.00 59.89 120.00 19.00 re B Q
+BT /F3 8.7 Tf 0.120 0.160 0.230 rg 51.00 66.89 Td (startDate) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 165.00 59.89 90.00 19.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 171.00 66.89 Td (Date) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 255.00 59.89 295.00 19.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 261.00 66.89 Td (Date when the event takes place) Tj ET
+BT /F1 8.5 Tf 0.45 0.50 0.58 rg 45.00 24.00 Td (CodeVortex - Step-by-Step Development Plan   |   Page 2 of 5) Tj ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 8 0 R >>
+endobj
+10 0 obj
+<< /Length 14487 >>
+stream
+q 0.930 0.950 0.970 rg 0.780 0.830 0.880 RG 0.6 w 45.00 778.89 120.00 18.00 re B Q
+BT /F2 9.2 Tf 0.060 0.090 0.160 rg 51.00 783.89 Td (Field) Tj ET
+q 0.930 0.950 0.970 rg 0.780 0.830 0.880 RG 0.6 w 165.00 778.89 90.00 18.00 re B Q
+BT /F2 9.2 Tf 0.060 0.090 0.160 rg 171.00 783.89 Td (Type) Tj ET
+q 0.930 0.950 0.970 rg 0.780 0.830 0.880 RG 0.6 w 255.00 778.89 295.00 18.00 re B Q
+BT /F2 9.2 Tf 0.060 0.090 0.160 rg 261.00 783.89 Td (Description / Example) Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 45.00 759.89 120.00 19.00 re B Q
+BT /F3 8.7 Tf 0.120 0.160 0.230 rg 51.00 766.89 Td (registrationDeadline) Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 165.00 759.89 90.00 19.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 171.00 766.89 Td (Date) Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 255.00 759.89 295.00 19.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 261.00 766.89 Td (Last date to register and finalize teams) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 45.00 740.89 120.00 19.00 re B Q
+BT /F3 8.7 Tf 0.120 0.160 0.230 rg 51.00 747.89 Td (teamSize) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 165.00 740.89 90.00 19.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 171.00 747.89 Td (String) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 255.00 740.89 295.00 19.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 261.00 747.89 Td (Allowed team size \(e.g., '2 - 4 Members'\)) Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 45.00 721.89 120.00 19.00 re B Q
+BT /F3 8.7 Tf 0.120 0.160 0.230 rg 51.00 728.89 Td (entryFee) Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 165.00 721.89 90.00 19.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 171.00 728.89 Td (String) Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 255.00 721.89 295.00 19.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 261.00 728.89 Td (Entry Fee \(e.g., 'Free' or 'Rs. 250 / Team'\)) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 45.00 702.89 120.00 19.00 re B Q
+BT /F3 8.7 Tf 0.120 0.160 0.230 rg 51.00 709.89 Td (prizePool) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 165.00 702.89 90.00 19.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 171.00 709.89 Td (String) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 255.00 702.89 295.00 19.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 261.00 709.89 Td (Prize details \(e.g., 'Rs. 1,50,000 + Internships'\)) Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 45.00 683.89 120.00 19.00 re B Q
+BT /F3 8.7 Tf 0.120 0.160 0.230 rg 51.00 690.89 Td (registrationUrl) Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 165.00 683.89 90.00 19.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 171.00 690.89 Td (String) Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 255.00 683.89 295.00 19.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 261.00 690.89 Td (External Official Registration Link button URL) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 45.00 652.89 120.00 31.00 re B Q
+BT /F3 8.7 Tf 0.120 0.160 0.230 rg 51.00 671.89 Td (tags) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 165.00 652.89 90.00 31.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 171.00 671.89 Td ([String]) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 255.00 652.89 295.00 31.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 261.00 671.89 Td (Relevant skill/domain tags \(e.g., ['AI/ML', 'FinTech',) Tj ET
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 261.00 659.89 Td ('IoT']\)) Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 45.00 633.89 120.00 19.00 re B Q
+BT /F3 8.7 Tf 0.120 0.160 0.230 rg 51.00 640.89 Td (description) Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 165.00 633.89 90.00 19.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 171.00 640.89 Td (String) Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 255.00 633.89 295.00 19.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 261.00 640.89 Td (Full overview, rules, and problem tracks) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 45.00 602.89 120.00 31.00 re B Q
+BT /F3 8.7 Tf 0.120 0.160 0.230 rg 51.00 621.89 Td (interestedUsers) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 165.00 602.89 90.00 31.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 171.00 621.89 Td ([ObjectId]) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 255.00 602.89 295.00 31.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 261.00 621.89 Td (Students who marked 'Interested / Looking for Team' on this) Tj ET
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 261.00 609.89 Td (event) Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 45.00 583.89 120.00 19.00 re B Q
+BT /F3 8.7 Tf 0.120 0.160 0.230 rg 51.00 590.89 Td (bookmarkedBy) Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 165.00 583.89 90.00 19.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 171.00 590.89 Td ([ObjectId]) Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 255.00 583.89 295.00 19.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 261.00 590.89 Td (Students who bookmarked/saved this event for quick access) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 45.00 564.89 120.00 19.00 re B Q
+BT /F3 8.7 Tf 0.120 0.160 0.230 rg 51.00 571.89 Td (postedBy) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 165.00 564.89 90.00 19.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 171.00 571.89 Td (ObjectId) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 255.00 564.89 295.00 19.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 261.00 571.89 Td (User ID of the student or organizer who posted the event) Tj ET
+BT /F2 10.8 Tf 0.190 0.180 0.510 rg 45.00 542.89 Td (2.3. TeamPost Schema \(Group Team Lobby / Open Team Recruitment\)) Tj ET
+q 0.930 0.950 0.970 rg 0.780 0.830 0.880 RG 0.6 w 45.00 514.89 120.00 18.00 re B Q
+BT /F2 9.2 Tf 0.060 0.090 0.160 rg 51.00 519.89 Td (Field) Tj ET
+q 0.930 0.950 0.970 rg 0.780 0.830 0.880 RG 0.6 w 165.00 514.89 90.00 18.00 re B Q
+BT /F2 9.2 Tf 0.060 0.090 0.160 rg 171.00 519.89 Td (Type) Tj ET
+q 0.930 0.950 0.970 rg 0.780 0.830 0.880 RG 0.6 w 255.00 514.89 295.00 18.00 re B Q
+BT /F2 9.2 Tf 0.060 0.090 0.160 rg 261.00 519.89 Td (Description / Example) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 45.00 495.89 120.00 19.00 re B Q
+BT /F3 8.7 Tf 0.120 0.160 0.230 rg 51.00 502.89 Td (teamName) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 165.00 495.89 90.00 19.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 171.00 502.89 Td (String) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 255.00 495.89 295.00 19.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 261.00 502.89 Td (Group Team name \(e.g., 'Team Alpha' or 'NeuralForge'\)) Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 45.00 476.89 120.00 19.00 re B Q
+BT /F3 8.7 Tf 0.120 0.160 0.230 rg 51.00 483.89 Td (eventTitle) Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 165.00 476.89 90.00 19.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 171.00 483.89 Td (String) Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 255.00 476.89 295.00 19.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 261.00 483.89 Td (Target competition name \(e.g., 'Smart India Hackathon 2026'\)) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 45.00 457.89 120.00 19.00 re B Q
+BT /F3 8.7 Tf 0.120 0.160 0.230 rg 51.00 464.89 Td (leader) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 165.00 457.89 90.00 19.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 171.00 464.89 Td (ObjectId) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 255.00 457.89 295.00 19.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 261.00 464.89 Td (Student who created the Group Team post) Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 45.00 438.89 120.00 19.00 re B Q
+BT /F3 8.7 Tf 0.120 0.160 0.230 rg 51.00 445.89 Td (currentMembers) Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 165.00 438.89 90.00 19.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 171.00 445.89 Td (Number) Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 255.00 438.89 295.00 19.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 261.00 445.89 Td (Current member count \(e.g., 2\)) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 45.00 419.89 120.00 19.00 re B Q
+BT /F3 8.7 Tf 0.120 0.160 0.230 rg 51.00 426.89 Td (maxMembers) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 165.00 419.89 90.00 19.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 171.00 426.89 Td (Number) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 255.00 419.89 295.00 19.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 261.00 426.89 Td (Target maximum team size \(e.g., 4\)) Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 45.00 400.89 120.00 19.00 re B Q
+BT /F3 8.7 Tf 0.120 0.160 0.230 rg 51.00 407.89 Td (neededRoles) Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 165.00 400.89 90.00 19.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 171.00 407.89 Td ([String]) Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 255.00 400.89 295.00 19.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 261.00 407.89 Td (Roles needed \(e.g., ['UI/UX Designer', 'ML Engineer']\)) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 45.00 381.89 120.00 19.00 re B Q
+BT /F3 8.7 Tf 0.120 0.160 0.230 rg 51.00 388.89 Td (description) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 165.00 381.89 90.00 19.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 171.00 388.89 Td (String) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 255.00 381.89 295.00 19.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 261.00 388.89 Td (Project idea pitch & what the team is building) Tj ET
+BT /F2 10.8 Tf 0.190 0.180 0.510 rg 45.00 359.89 Td (2.4. TeamRequest Schema \(1-on-1 & Group Teammate Invites + Chat\)) Tj ET
+q 0.930 0.950 0.970 rg 0.780 0.830 0.880 RG 0.6 w 45.00 331.89 120.00 18.00 re B Q
+BT /F2 9.2 Tf 0.060 0.090 0.160 rg 51.00 336.89 Td (Field) Tj ET
+q 0.930 0.950 0.970 rg 0.780 0.830 0.880 RG 0.6 w 165.00 331.89 90.00 18.00 re B Q
+BT /F2 9.2 Tf 0.060 0.090 0.160 rg 171.00 336.89 Td (Type) Tj ET
+q 0.930 0.950 0.970 rg 0.780 0.830 0.880 RG 0.6 w 255.00 331.89 295.00 18.00 re B Q
+BT /F2 9.2 Tf 0.060 0.090 0.160 rg 261.00 336.89 Td (Description / Example) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 45.00 312.89 120.00 19.00 re B Q
+BT /F3 8.7 Tf 0.120 0.160 0.230 rg 51.00 319.89 Td (fromUser) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 165.00 312.89 90.00 19.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 171.00 319.89 Td (ObjectId) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 255.00 312.89 295.00 19.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 261.00 319.89 Td (Student sending the Team-Up invite) Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 45.00 293.89 120.00 19.00 re B Q
+BT /F3 8.7 Tf 0.120 0.160 0.230 rg 51.00 300.89 Td (toUser) Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 165.00 293.89 90.00 19.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 171.00 300.89 Td (ObjectId) Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 255.00 293.89 295.00 19.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 261.00 300.89 Td (Student receiving the invite) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 45.00 262.89 120.00 31.00 re B Q
+BT /F3 8.7 Tf 0.120 0.160 0.230 rg 51.00 281.89 Td (eventTitle) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 165.00 262.89 90.00 31.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 171.00 281.89 Td (String) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 255.00 262.89 295.00 31.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 261.00 281.89 Td (Target competition name \(e.g., 'Techfest IITB Robotics) Tj ET
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 261.00 269.89 Td (Challenge'\)) Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 45.00 231.89 120.00 31.00 re B Q
+BT /F3 8.7 Tf 0.120 0.160 0.230 rg 51.00 250.89 Td (note) Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 165.00 231.89 90.00 31.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 171.00 250.89 Td (String) Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 255.00 231.89 295.00 31.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 261.00 250.89 Td (Pitch note explaining why they want to team up and what role) Tj ET
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 261.00 238.89 Td (they need) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 45.00 212.89 120.00 19.00 re B Q
+BT /F3 8.7 Tf 0.120 0.160 0.230 rg 51.00 219.89 Td (status) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 165.00 212.89 90.00 19.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 171.00 219.89 Td (String) Tj ET
+q 1.000 1.000 1.000 rg 0.800 0.850 0.900 RG 0.5 w 255.00 212.89 295.00 19.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 261.00 219.89 Td ('pending', 'accepted', or 'declined') Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 45.00 181.89 120.00 31.00 re B Q
+BT /F3 8.7 Tf 0.120 0.160 0.230 rg 51.00 200.89 Td (messages) Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 165.00 181.89 90.00 31.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 171.00 200.89 Td ([Object]) Tj ET
+q 0.980 0.990 1.000 rg 0.800 0.850 0.900 RG 0.5 w 255.00 181.89 295.00 31.00 re B Q
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 261.00 200.89 Td ([{ senderId, senderName, text, createdAt }] unlocked once) Tj ET
+BT /F1 9.0 Tf 0.120 0.160 0.230 rg 261.00 188.89 Td (accepted) Tj ET
+q 0.310 0.270 0.900 rg 45.00 151.89 54.00 17.00 re f Q
+BT /F2 8.5 Tf 1.000 1.000 1.000 rg 52.00 156.89 Td (STEP 3) Tj ET
+BT /F2 13 Tf 0.060 0.090 0.160 rg 107.00 155.89 Td (Backend REST API Endpoints \(Node.js + Express\)) Tj ET
+q 0.820 0.860 0.910 rg 45.00 145.89 505.28 1.00 re f Q
+BT /F2 10 Tf 0.310 0.270 0.900 rg 55.00 124.89 Td (*) Tj ET
+BT /F1 9.5 Tf 0.120 0.160 0.230 rg 65.00 124.89 Td (POST /api/auth/register & POST /api/auth/login: Create a student/admin account or log in using) Tj ET
+BT /F1 9.5 Tf 0.120 0.160 0.230 rg 65.00 111.89 Td (College ID + Password with JWT authentication \(plus 1-click Demo Login accounts\).) Tj ET
+BT /F2 10 Tf 0.310 0.270 0.900 rg 55.00 96.89 Td (*) Tj ET
+BT /F1 9.5 Tf 0.120 0.160 0.230 rg 65.00 96.89 Td (GET /api/auth/me & PUT /api/users/profile: Fetch current logged-in profile or update skills,) Tj ET
+BT /F1 9.5 Tf 0.120 0.160 0.230 rg 65.00 83.89 Td (interests, bio, college, 'Looking for Team' status, and contact links.) Tj ET
+BT /F1 8.5 Tf 0.45 0.50 0.58 rg 45.00 24.00 Td (CodeVortex - Step-by-Step Development Plan   |   Page 3 of 5) Tj ET
+endstream
+endobj
+11 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 10 0 R >>
+endobj
+12 0 obj
+<< /Length 8373 >>
+stream
+BT /F2 10 Tf 0.310 0.270 0.900 rg 55.00 787.89 Td (*) Tj ET
+BT /F1 9.5 Tf 0.120 0.160 0.230 rg 65.00 787.89 Td (GET /api/search?q=... \(Unified Omni-Search\): Single search query that searches across College) Tj ET
+BT /F1 9.5 Tf 0.120 0.160 0.230 rg 65.00 774.89 Td (Name, Username, Competition/Tech Fest Name, Skills, and Interests simultaneously.) Tj ET
+BT /F2 10 Tf 0.310 0.270 0.900 rg 55.00 759.89 Td (*) Tj ET
+BT /F1 9.5 Tf 0.120 0.160 0.230 rg 65.00 759.89 Td (GET /api/events & POST /api/events: Fetch tech fests with search query \(by competition name,) Tj ET
+BT /F1 9.5 Tf 0.120 0.160 0.230 rg 65.00 746.89 Td (college name, city, or domain tag\) and filters \(category, mode, official vs. student-shared\) or) Tj ET
+BT /F1 9.5 Tf 0.120 0.160 0.230 rg 65.00 733.89 Td (post a new event.) Tj ET
+BT /F2 10 Tf 0.310 0.270 0.900 rg 55.00 718.89 Td (*) Tj ET
+BT /F1 9.5 Tf 0.120 0.160 0.230 rg 65.00 718.89 Td (POST /api/events/:id/interest & POST /api/events/:id/bookmark: Mark yourself as 'Interested /) Tj ET
+BT /F1 9.5 Tf 0.120 0.160 0.230 rg 65.00 705.89 Td (Looking for Teammates' or Bookmark/Save an event to your personal list.) Tj ET
+BT /F2 10 Tf 0.310 0.270 0.900 rg 55.00 690.89 Td (*) Tj ET
+BT /F1 9.5 Tf 0.120 0.160 0.230 rg 65.00 690.89 Td (GET /api/students: Search the Student Directory by Username, College Name, Skill tag, Interest) Tj ET
+BT /F1 9.5 Tf 0.120 0.160 0.230 rg 65.00 677.89 Td (area, Past Hackathon Wins, Branch, or Graduation Year.) Tj ET
+BT /F2 10 Tf 0.310 0.270 0.900 rg 55.00 662.89 Td (*) Tj ET
+BT /F1 9.5 Tf 0.120 0.160 0.230 rg 65.00 662.89 Td (GET / POST /api/team-posts & POST /api/team-posts/:id/apply: Browse or create Group Team Posts) Tj ET
+BT /F1 9.5 Tf 0.120 0.160 0.230 rg 65.00 649.89 Td (\(e.g., 'Team Alpha has 2/4 members, needing 1 UI designer'\) and apply to join.) Tj ET
+BT /F2 10 Tf 0.310 0.270 0.900 rg 55.00 634.89 Td (*) Tj ET
+BT /F1 9.5 Tf 0.120 0.160 0.230 rg 65.00 634.89 Td (GET / POST / PUT /api/team-requests: Send a Team-Up request, view incoming/sent requests, Accept) Tj ET
+BT /F1 9.5 Tf 0.120 0.160 0.230 rg 65.00 621.89 Td (or Decline requests, and exchange messages in accepted teammate threads.) Tj ET
+q 0.310 0.270 0.900 rg 45.00 595.89 54.00 17.00 re f Q
+BT /F2 8.5 Tf 1.000 1.000 1.000 rg 52.00 600.89 Td (STEP 4) Tj ET
+BT /F2 13 Tf 0.060 0.090 0.160 rg 107.00 599.89 Td (Frontend Screens & Interactive Flows) Tj ET
+q 0.820 0.860 0.910 rg 45.00 589.89 505.28 1.00 re f Q
+BT /F2 10 Tf 0.310 0.270 0.900 rg 55.00 568.89 Td (*) Tj ET
+BT /F1 9.5 Tf 0.120 0.160 0.230 rg 65.00 568.89 Td (1. Top Navigation & Global Omni-Search Bar: Search across College Name, Username, Competition) Tj ET
+BT /F1 9.5 Tf 0.120 0.160 0.230 rg 65.00 555.89 Td (Name, Team Name, or Skills at any time; switch tabs; view notifications; or edit privacy settings.) Tj ET
+BT /F2 10 Tf 0.310 0.270 0.900 rg 55.00 540.89 Td (*) Tj ET
+BT /F1 9.5 Tf 0.120 0.160 0.230 rg 65.00 540.89 Td (2. Tab 1 - Explore Tech Fests & Competitions: Filter by Category, Mode, Free vs. Paid Entry Fee,) Tj ET
+BT /F1 9.5 Tf 0.120 0.160 0.230 rg 65.00 527.89 Td (or 'Bookmarked Only'. Event Cards show Official/Community badge, Entry Fee, Prize Pool, Deadline,) Tj ET
+BT /F1 9.5 Tf 0.120 0.160 0.230 rg 65.00 514.89 Td (Official Registration Link button, Bookmark star button, and 'Find Teammates for this Event'.) Tj ET
+BT /F2 10 Tf 0.310 0.270 0.900 rg 55.00 499.89 Td (*) Tj ET
+BT /F1 9.5 Tf 0.120 0.160 0.230 rg 65.00 499.89 Td (3. Tab 2 - Student Skill & Achievement Directory: Shows custom @username \(keeping Real Name & User) Tj ET
+BT /F1 9.5 Tf 0.120 0.160 0.230 rg 65.00 486.89 Td (Number hidden unless toggled visible by the user\), College, Branch/Year, Past Hackathon Wins) Tj ET
+BT /F1 9.5 Tf 0.120 0.160 0.230 rg 65.00 473.89 Td (badges, Portfolio & Resume links, Skills, Interests, and 'Team Up / Connect'.) Tj ET
+BT /F2 10 Tf 0.310 0.270 0.900 rg 55.00 458.89 Td (*) Tj ET
+BT /F1 9.5 Tf 0.120 0.160 0.230 rg 65.00 458.89 Td (4. Tab 3 - Group Team Lobby \(Open Team Posts\): Browse open student teams recruiting specific roles) Tj ET
+BT /F1 9.5 Tf 0.120 0.160 0.230 rg 65.00 445.89 Td (\(showing member progress like 2/4 Members and Needed Roles\), post your own team, or click 'Request) Tj ET
+BT /F1 9.5 Tf 0.120 0.160 0.230 rg 65.00 432.89 Td (to Join Team'.) Tj ET
+BT /F2 10 Tf 0.310 0.270 0.900 rg 55.00 417.89 Td (*) Tj ET
+BT /F1 9.5 Tf 0.120 0.160 0.230 rg 65.00 417.89 Td (5. Tab 4 - Team-Up Requests & Teammate Chat: Split into Incoming Requests \(with Accept/Decline) Tj ET
+BT /F1 9.5 Tf 0.120 0.160 0.230 rg 65.00 404.89 Td (buttons\), Sent Requests, and Accepted Teammates \(where private GitHub/LinkedIn/Discord/WhatsApp) Tj ET
+BT /F1 9.5 Tf 0.120 0.160 0.230 rg 65.00 391.89 Td (links and an interactive Chat Box are unlocked\).) Tj ET
+q 0.310 0.270 0.900 rg 45.00 365.89 54.00 17.00 re f Q
+BT /F2 8.5 Tf 1.000 1.000 1.000 rg 52.00 370.89 Td (STEP 5) Tj ET
+BT /F2 13 Tf 0.060 0.090 0.160 rg 107.00 369.89 Td (7-Day Step-by-Step Build Plan) Tj ET
+q 0.820 0.860 0.910 rg 45.00 359.89 505.28 1.00 re f Q
+BT /F2 10 Tf 0.310 0.270 0.900 rg 55.00 338.89 Td (*) Tj ET
+BT /F1 9.5 Tf 0.120 0.160 0.230 rg 65.00 338.89 Td (Day 1 - Project Setup, MongoDB Schemas & Seed Data: Initialize codevortex/, create Mongoose models) Tj ET
+BT /F1 9.5 Tf 0.120 0.160 0.230 rg 65.00 325.89 Td (\(User, Event, TeamPost, TeamRequest\), connect MongoDB with smart fallback, and load sample) Tj ET
+BT /F1 9.5 Tf 0.120 0.160 0.230 rg 65.00 312.89 Td (colleges, fests, and students.) Tj ET
+BT /F2 10 Tf 0.310 0.270 0.900 rg 55.00 297.89 Td (*) Tj ET
+BT /F1 9.5 Tf 0.120 0.160 0.230 rg 65.00 297.89 Td (Day 2 - College ID Auth, Custom Username & Privacy Controls: Build /api/auth/* and) Tj ET
+BT /F1 9.5 Tf 0.120 0.160 0.230 rg 65.00 284.89 Td (/api/users/profile routes \(College ID + Password login, custom @username, and privacy toggles) Tj ET
+BT /F1 9.5 Tf 0.120 0.160 0.230 rg 65.00 271.89 Td (hiding Real Name & User Number by default\) + Auth UI.) Tj ET
+BT /F2 10 Tf 0.310 0.270 0.900 rg 55.00 256.89 Td (*) Tj ET
+BT /F1 9.5 Tf 0.120 0.160 0.230 rg 65.00 256.89 Td (Day 3 - Tech Fests & Competitions Hub + Bookmarks: Build /api/events and the Explore Fests UI with) Tj ET
+BT /F1 9.5 Tf 0.120 0.160 0.230 rg 65.00 243.89 Td (Entry Fee, Prize Pool, External Registration Link, Bookmark/Save toggle, and '+ Post Event' modal.) Tj ET
+BT /F2 10 Tf 0.310 0.270 0.900 rg 55.00 228.89 Td (*) Tj ET
+BT /F1 9.5 Tf 0.120 0.160 0.230 rg 65.00 228.89 Td (Day 4 - Student Skill & Achievement Directory: Build /api/students and Student Directory UI with) Tj ET
+BT /F1 9.5 Tf 0.120 0.160 0.230 rg 65.00 215.89 Td (Past Hackathon Wins badges, Portfolio/Resume links, and filters for Skill, Interest, College,) Tj ET
+BT /F1 9.5 Tf 0.120 0.160 0.230 rg 65.00 202.89 Td (Branch, and Year.) Tj ET
+BT /F2 10 Tf 0.310 0.270 0.900 rg 55.00 187.89 Td (*) Tj ET
+BT /F1 9.5 Tf 0.120 0.160 0.230 rg 65.00 187.89 Td (Day 5 - Unified Search Query \(College, Username, Competition\): Build /api/search?q=... and header) Tj ET
+BT /F1 9.5 Tf 0.120 0.160 0.230 rg 65.00 174.89 Td (Omni-Search matching across College Name, Username, Competition Name, Team Name, and Skills.) Tj ET
+BT /F2 10 Tf 0.310 0.270 0.900 rg 55.00 159.89 Td (*) Tj ET
+BT /F1 9.5 Tf 0.120 0.160 0.230 rg 65.00 159.89 Td (Day 6 - Group Team Lobby & 1-on-1 Team-Up Requests: Build Group Team Posts \(e.g., '2/4 Members,) Tj ET
+BT /F1 9.5 Tf 0.120 0.160 0.230 rg 65.00 146.89 Td (needing 1 UI Designer'\) and 1-on-1 Team-Up Request pitch notes with Accept/Decline actions.) Tj ET
+BT /F2 10 Tf 0.310 0.270 0.900 rg 55.00 131.89 Td (*) Tj ET
+BT /F1 9.5 Tf 0.120 0.160 0.230 rg 65.00 131.89 Td (Day 7 - Teammate Chat, Contact Unlocks & Final Polish: Unlock private contact links \(GitHub,) Tj ET
+BT /F1 9.5 Tf 0.120 0.160 0.230 rg 65.00 118.89 Td (LinkedIn, Discord, WhatsApp\) and in-app Direct Chat for accepted teammates, plus final Cyberpunk) Tj ET
+BT /F1 9.5 Tf 0.120 0.160 0.230 rg 65.00 105.89 Td (UI polish.) Tj ET
+q 0.310 0.270 0.900 rg 45.00 79.89 54.00 17.00 re f Q
+BT /F2 8.5 Tf 1.000 1.000 1.000 rg 52.00 84.89 Td (READY) Tj ET
+BT /F2 13 Tf 0.060 0.090 0.160 rg 107.00 83.89 Td (All Requested & Review Features Included) Tj ET
+q 0.820 0.860 0.910 rg 45.00 73.89 505.28 1.00 re f Q
+BT /F1 8.5 Tf 0.45 0.50 0.58 rg 45.00 24.00 Td (CodeVortex - Step-by-Step Development Plan   |   Page 4 of 5) Tj ET
+endstream
+endobj
+13 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 12 0 R >>
+endobj
+14 0 obj
+<< /Length 1716 >>
+stream
+BT /F1 9.8 Tf 0.150 0.200 0.280 rg 45.00 787.89 Td (All review enhancements have now been integrated into this blueprint:) Tj ET
+BT /F2 10 Tf 0.310 0.270 0.900 rg 55.00 770.39 Td (*) Tj ET
+BT /F1 9.5 Tf 0.120 0.160 0.230 rg 65.00 770.39 Td (1. Student Profile Enhancements \(Included\): Custom @username, Privacy Toggles for Real Name & User) Tj ET
+BT /F1 9.5 Tf 0.120 0.160 0.230 rg 65.00 757.39 Td (Number/ID \(hidden by default\), Past Hackathon Wins/Achievements, Portfolio URL, Resume link, and) Tj ET
+BT /F1 9.5 Tf 0.120 0.160 0.230 rg 65.00 744.39 Td (Hostel/Campus info.) Tj ET
+BT /F2 10 Tf 0.310 0.270 0.900 rg 55.00 729.39 Td (*) Tj ET
+BT /F1 9.5 Tf 0.120 0.160 0.230 rg 65.00 729.39 Td (2. Event Enhancements \(Included\): Entry Fee \(Free vs. Paid\), Official External Registration Link) Tj ET
+BT /F1 9.5 Tf 0.120 0.160 0.230 rg 65.00 716.39 Td (button, and Bookmark/Save Event toggle with a Bookmarked filter.) Tj ET
+BT /F2 10 Tf 0.310 0.270 0.900 rg 55.00 701.39 Td (*) Tj ET
+BT /F1 9.5 Tf 0.120 0.160 0.230 rg 65.00 701.39 Td (3. Group Team Lobby + 1-on-1 Team-Up Chat \(Included\): Both 1-on-1 Team-Up Requests + Chat AND) Tj ET
+BT /F1 9.5 Tf 0.120 0.160 0.230 rg 65.00 688.39 Td (Group Team Posts \(e.g., 'Team Alpha has 2/4 members, needing 1 UI designer & 1 ML engineer'\).) Tj ET
+BT /F2 10 Tf 0.310 0.270 0.900 rg 55.00 673.39 Td (*) Tj ET
+BT /F1 9.5 Tf 0.120 0.160 0.230 rg 65.00 673.39 Td (4. Unified Omni-Search \(Included\): Search by College Name, Username, Competition Name, Team Name,) Tj ET
+BT /F1 9.5 Tf 0.120 0.160 0.230 rg 65.00 660.39 Td (or Skill/Interest tag.) Tj ET
+BT /F1 8.5 Tf 0.45 0.50 0.58 rg 45.00 24.00 Td (CodeVortex - Step-by-Step Development Plan   |   Page 5 of 5) Tj ET
+endstream
+endobj
+15 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 14 0 R >>
+endobj
+xref
+0 16
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000148 00000 n 
+0000000218 00000 n 
+0000000293 00000 n 
+0000000361 00000 n 
+0000007626 00000 n 
+0000007778 00000 n 
+0000023366 00000 n 
+0000023518 00000 n 
+0000038059 00000 n 
+0000038213 00000 n 
+0000046639 00000 n 
+0000046793 00000 n 
+0000048562 00000 n 
+trailer
+<< /Size 16 /Root 1 0 R >>
+startxref
+48716
+%%EOF

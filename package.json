@@ -1,0 +1,17 @@
+{
+  "name": "codevortex",
+  "version": "1.0.0",
+  "description": "CodeVortex - Multi-college tech fest discovery, student skill directory, group team lobby & teammate chat",
+  "main": "server.js",
+  "scripts": {
+    "start": "node --watch server.js",
+    "seed": "node seed/sampleData.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.3.1"
+  }
+}

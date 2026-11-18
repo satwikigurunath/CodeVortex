@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: codevortex
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: MONGO_URI
+        value: mongodb+srv://sparrowcode597_db_user:is30gPZmmze4u4HI@cluster0.xoulbzp.mongodb.net/codevortex?retryWrites=true&w=majority
+      - key: JWT_SECRET
+        value: codevortex_cyberpunk_secret_2026
