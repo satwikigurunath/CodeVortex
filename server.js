@@ -3909,13 +3909,10 @@ app.use((err, req, res, next) => {
   next(err);
 });
 
-(async function startServer() {
-  await Promise.all([initDatabase(), syncRealTimeCompetitions(true)]);
+(function startServer() {
   const srv = app.listen(PORT, '0.0.0.0', () => {
     const lanIp = getLocalNetworkIp();
-    console.log(
-      `[CodeVortex] Laptop URL: http://localhost:${PORT} | Live Competitions synced: ${liveApiCache.events.length}`
-    );
+    console.log(`[CodeVortex] Server listening on port ${PORT} (http://localhost:${PORT})`);
     if (lanIp) {
       console.log(
         `[CodeVortex] 📱 Mobile & Other Devices (Same Wi-Fi / Hotspot): http://${lanIp}:${PORT}`
@@ -3929,6 +3926,16 @@ app.use((err, req, res, next) => {
       );
     }
   });
+
+  Promise.all([initDatabase(), syncRealTimeCompetitions(true)])
+    .then(() => {
+      console.log(
+        `[CodeVortex] Ready | Live Competitions synced: ${liveApiCache.events.length}`
+      );
+    })
+    .catch((err) => {
+      console.warn('[CodeVortex] Startup sync notice:', err.message);
+    });
 })();
 
 module.exports = { app, dbState, optionalAuth, requireAuth, sanitizeUser };
