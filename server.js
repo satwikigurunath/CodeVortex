@@ -39,23 +39,206 @@ try {
   mongoose = null;
 }
 
-const {
-  ALLOWED_DISTRICTS,
-  REGIONAL_COLLEGES,
-  sampleUsers,
-  sampleEvents,
-  sampleTeamPosts,
-  sampleTeamRequests,
-  seedMongoIfNeeded
-} = require('./seed/sampleData');
+let seedDataModule = null;
+try {
+  seedDataModule = require('./seed/sampleData');
+} catch {
+  try {
+    seedDataModule = require('./sampleData');
+  } catch {
+    seedDataModule = null;
+  }
+}
+
+const ALLOWED_DISTRICTS = seedDataModule?.ALLOWED_DISTRICTS || ['All India'];
+const REGIONAL_COLLEGES = seedDataModule?.REGIONAL_COLLEGES || [
+  { name: 'IIT Bombay (Indian Institute of Technology Bombay), Mumbai', district: 'Maharashtra', officialUrl: 'https://iitb.ac.in' },
+  { name: 'IIT Delhi (Indian Institute of Technology Delhi)', district: 'Delhi', officialUrl: 'https://iitd.ac.in' },
+  { name: 'IIT Madras (Indian Institute of Technology Madras), Chennai', district: 'Tamil Nadu', officialUrl: 'https://iitm.ac.in' },
+  { name: 'IIT Dharwad (Indian Institute of Technology Dharwad)', district: 'Karnataka', officialUrl: 'https://iitdh.ac.in' },
+  { name: 'NITK Surathkal (National Institute of Technology Karnataka)', district: 'Karnataka', officialUrl: 'https://nitk.ac.in' },
+  { name: 'IIIT Hyderabad (International Institute of Information Technology)', district: 'Telangana', officialUrl: 'https://iiit.ac.in' },
+  { name: 'BITS Pilani (Birla Institute of Technology & Science), Pilani', district: 'Rajasthan', officialUrl: 'https://bits-pilani.ac.in' },
+  { name: 'VIT Vellore (Vellore Institute of Technology)', district: 'Tamil Nadu', officialUrl: 'https://vit.ac.in' },
+  { name: 'RV College of Engineering (RVCE), Bengaluru', district: 'Karnataka', officialUrl: 'https://rvce.edu.in' },
+  { name: 'KLS Gogte Institute of Technology (GIT), Belagavi', district: 'Karnataka', officialUrl: 'https://git.edu' },
+  { name: 'KLE Technological University (BVBCET), Hubballi-Dharwad', district: 'Karnataka', officialUrl: 'https://kletech.ac.in' },
+  { name: 'KLE Technological University (MSSCET Campus), Belagavi', district: 'Karnataka', officialUrl: 'https://belagavi.kletech.ac.in' }
+];
+const sampleUsers = seedDataModule?.sampleUsers || [];
+const sampleEvents = seedDataModule?.sampleEvents || [];
+const sampleTeamPosts = seedDataModule?.sampleTeamPosts || [];
+const sampleTeamRequests = seedDataModule?.sampleTeamRequests || [];
+const seedMongoIfNeeded =
+  seedDataModule?.seedMongoIfNeeded ||
+  (async function () {
+    return true;
+  });
 
 let User, Event, TeamPost, TeamRequest, ChatGroup;
 if (mongoose) {
-  User = require('./models/User');
-  Event = require('./models/Event');
-  TeamPost = require('./models/TeamPost');
-  TeamRequest = require('./models/TeamRequest');
-  ChatGroup = require('./models/ChatGroup');
+  try {
+    User = require('./models/User');
+  } catch {
+    const UserPostSchema = new mongoose.Schema(
+      {
+        id: { type: String, required: true },
+        type: { type: String, enum: ['post', 'reel', 'upload'], default: 'post' },
+        title: { type: String, default: '', trim: true },
+        caption: { type: String, default: '', trim: true },
+        mediaUrl: { type: String, default: '', trim: true },
+        tags: { type: [String], default: [] },
+        likes: { type: [String], default: [] },
+        createdAt: { type: Date, default: Date.now }
+      },
+      { _id: false }
+    );
+    const UserSchema = new mongoose.Schema(
+      {
+        collegeId: { type: String, required: true, unique: true, trim: true },
+        username: { type: String, required: true, unique: true, trim: true },
+        name: { type: String, required: true, trim: true },
+        avatarUrl: { type: String, default: '' },
+        userNumber: { type: String, default: '', trim: true },
+        privacy: {
+          showRealName: { type: Boolean, default: true },
+          showUserNumber: { type: Boolean, default: false }
+        },
+        passwordHash: { type: String, required: true },
+        role: { type: String, enum: ['student', 'organizer'], default: 'student' },
+        college: { type: String, required: true, trim: true },
+        city: { type: String, default: '', trim: true },
+        branch: { type: String, default: 'CSE', trim: true },
+        year: { type: Number, default: 2, min: 1, max: 5 },
+        bio: { type: String, default: '' },
+        skills: { type: [String], default: [] },
+        interests: { type: [String], default: [] },
+        achievements: { type: [String], default: [] },
+        portfolioUrl: { type: String, default: '' },
+        resumeUrl: { type: String, default: '' },
+        hostelOrCampus: { type: String, default: '' },
+        lookingForTeam: { type: Boolean, default: true },
+        followers: { type: [String], default: [] },
+        following: { type: [String], default: [] },
+        posts: { type: [UserPostSchema], default: [] },
+        bookmarkedEvents: { type: [String], default: [] },
+        contactLinks: {
+          github: { type: String, default: '' },
+          linkedin: { type: String, default: '' },
+          discord: { type: String, default: '' },
+          whatsapp: { type: String, default: '' }
+        }
+      },
+      { timestamps: true }
+    );
+    User = mongoose.models.User || mongoose.model('User', UserSchema);
+  }
+
+  try {
+    Event = require('./models/Event');
+  } catch {
+    const EventSchema = new mongoose.Schema(
+      {
+        title: { type: String, required: true, trim: true },
+        organizerCollege: { type: String, required: true, trim: true },
+        city: { type: String, required: true, trim: true },
+        mode: { type: String, enum: ['Offline', 'Online', 'Hybrid'], default: 'Offline' },
+        category: {
+          type: String,
+          enum: ['Hackathon', 'Tech Fest', 'Robotics', 'Coding Contest', 'Paper/Project'],
+          default: 'Hackathon'
+        },
+        isOfficial: { type: Boolean, default: false },
+        startDate: { type: Date, required: true },
+        registrationDeadline: { type: Date, required: true },
+        teamSize: { type: String, default: '2 - 4 Members' },
+        entryFee: { type: String, default: 'Free' },
+        prizePool: { type: String, default: 'TBA' },
+        registrationUrl: { type: String, default: '' },
+        tags: { type: [String], default: [] },
+        description: { type: String, default: '' },
+        interestedUsers: [{ type: mongoose.Schema.Types.ObjectId, ref: 'User' }],
+        bookmarkedBy: [{ type: mongoose.Schema.Types.ObjectId, ref: 'User' }],
+        postedBy: { type: mongoose.Schema.Types.ObjectId, ref: 'User' }
+      },
+      { timestamps: true }
+    );
+    Event = mongoose.models.Event || mongoose.model('Event', EventSchema);
+  }
+
+  try {
+    TeamPost = require('./models/TeamPost');
+  } catch {
+    const TeamPostSchema = new mongoose.Schema(
+      {
+        teamName: { type: String, required: true, trim: true },
+        eventTitle: { type: String, required: true, trim: true },
+        leader: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true },
+        currentMembers: { type: Number, default: 1, min: 1 },
+        maxMembers: { type: Number, default: 4, min: 2 },
+        neededRoles: { type: [String], default: [] },
+        description: { type: String, required: true }
+      },
+      { timestamps: true }
+    );
+    TeamPost = mongoose.models.TeamPost || mongoose.model('TeamPost', TeamPostSchema);
+  }
+
+  try {
+    TeamRequest = require('./models/TeamRequest');
+  } catch {
+    const MessageSchema = new mongoose.Schema(
+      {
+        senderId: { type: String, required: true },
+        senderName: { type: String, required: true },
+        text: { type: String, required: true },
+        createdAt: { type: Date, default: Date.now }
+      },
+      { _id: false }
+    );
+    const TeamRequestSchema = new mongoose.Schema(
+      {
+        fromUser: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true },
+        toUser: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true },
+        eventTitle: { type: String, required: true, trim: true },
+        note: { type: String, required: true },
+        status: { type: String, enum: ['pending', 'accepted', 'declined'], default: 'pending' },
+        messages: { type: [MessageSchema], default: [] },
+        lastReadAt: { type: Map, of: Date, default: {} }
+      },
+      { timestamps: true }
+    );
+    TeamRequest = mongoose.models.TeamRequest || mongoose.model('TeamRequest', TeamRequestSchema);
+  }
+
+  try {
+    ChatGroup = require('./models/ChatGroup');
+  } catch {
+    const groupMessageSchema = new mongoose.Schema(
+      {
+        senderId: { type: String, required: true },
+        senderName: { type: String, required: true },
+        text: { type: String, required: true, trim: true },
+        isSystem: { type: Boolean, default: false },
+        createdAt: { type: Date, default: Date.now }
+      },
+      { _id: false }
+    );
+    const chatGroupSchema = new mongoose.Schema(
+      {
+        name: { type: String, required: true, trim: true },
+        description: { type: String, default: '', trim: true },
+        avatarEmoji: { type: String, default: '👥' },
+        inviteCode: { type: String, default: '', trim: true },
+        admin: { type: String, required: true },
+        members: [{ type: String }],
+        messages: [groupMessageSchema],
+        lastReadAt: { type: Map, of: Date, default: {} }
+      },
+      { timestamps: true }
+    );
+    ChatGroup = mongoose.models.ChatGroup || mongoose.model('ChatGroup', chatGroupSchema);
+  }
 }
 
 const app = express();
@@ -98,6 +281,7 @@ app.get('/logo-tornado.png', (req, res) => {
 });
 
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(__dirname));
 
 // Smart Database State: MongoDB Atlas with Persistent Disk Backup Store
 const LOCAL_STORE_PATH = path.join(__dirname, 'data', 'localStore.json');
