@@ -982,35 +982,17 @@ async function findUserForReset(rawInput) {
   return user;
 }
 
-// Zero-dependency built-in TLS Gmail SMTP mailer (smtp.gmail.com:465)
-function sendGmailOtpEmail(toEmail, code, purpose) {
-  return new Promise((resolve, reject) => {
-    const gmailUser = String(process.env.GMAIL_USER || '').trim();
-    const gmailPass = String(process.env.GMAIL_APP_PASSWORD || '').replace(/\s+/g, '');
+function buildOtpEmailContent(code, purpose) {
+  const isReset = purpose === 'reset';
+  const subject = isReset
+    ? `${code} is your CodeVortex Password Reset OTP`
+    : `${code} is your CodeVortex Verification OTP`;
+  const heading = isReset ? 'Password Reset Verification' : 'Verify Your Email Address';
+  const subtitle = isReset
+    ? 'Use the 6-digit OTP below to reset your CodeVortex password:'
+    : 'Welcome to CodeVortex! Use the 6-digit OTP below to complete your account registration:';
 
-    if (
-      !gmailUser ||
-      !gmailPass ||
-      gmailUser === 'YOUR_GMAIL_ADDRESS@gmail.com' ||
-      gmailPass === 'YOUR_16_CHAR_GMAIL_APP_PASSWORD'
-    ) {
-      return reject(
-        new Error(
-          'Gmail OTP is not configured yet. Please add GMAIL_USER and GMAIL_APP_PASSWORD in your .env file (or Render Environment Variables).'
-        )
-      );
-    }
-
-    const isReset = purpose === 'reset';
-    const subject = isReset
-      ? `${code} is your CodeVortex Password Reset OTP`
-      : `${code} is your CodeVortex Verification OTP`;
-    const heading = isReset ? 'Password Reset Verification' : 'Verify Your Email Address';
-    const subtitle = isReset
-      ? 'Use the 6-digit OTP below to reset your CodeVortex password:'
-      : 'Welcome to CodeVortex! Use the 6-digit OTP below to complete your account registration:';
-
-    const htmlBody = `<!DOCTYPE html>
+  const htmlBody = `<!DOCTYPE html>
 <html>
 <body style="margin:0;padding:24px;background:#0b1120;font-family:Arial,Helvetica,sans-serif;color:#f8fafc;">
   <div style="max-width:480px;margin:0 auto;background:#111b30;border:1px solid #263656;border-radius:16px;padding:30px 26px;">
@@ -1029,6 +1011,84 @@ function sendGmailOtpEmail(toEmail, code, purpose) {
   </div>
 </body>
 </html>`;
+  return { subject, htmlBody };
+}
+
+// Send real OTP email via HTTPS (Google Apps Script / Brevo — works on Render Free Tier!) or Gmail SMTP (local)
+async function sendGmailOtpEmail(toEmail, code, purpose) {
+  const { subject, htmlBody } = buildOtpEmailContent(code, purpose);
+
+  // 1) Google Apps Script Web App Relay (100% FREE Gmail over HTTPS port 443 — never blocked by Render)
+  const scriptUrl = String(process.env.GMAIL_SCRIPT_URL || '').trim();
+  if (scriptUrl && scriptUrl.startsWith('https://script.google.com/')) {
+    const resp = await fetch(scriptUrl, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      redirect: 'follow',
+      body: JSON.stringify({
+        to: toEmail,
+        subject,
+        html: htmlBody,
+        secret: String(process.env.GMAIL_SCRIPT_SECRET || '').trim()
+      })
+    });
+    const text = await resp.text();
+    let parsed = {};
+    try {
+      parsed = JSON.parse(text);
+    } catch {}
+    if (resp.ok && (parsed.ok === true || /"ok"\s*:\s*true/i.test(text))) {
+      return { ok: true, provider: 'gmail_apps_script' };
+    }
+    throw new Error(
+      `Gmail Apps Script error (${resp.status}): ${parsed.error || text.slice(0, 140) || 'Check Web App deployment ("Who has access: Anyone").'}`
+    );
+  }
+
+  // 2) Brevo HTTP API (300 free emails/day over HTTPS port 443 — never blocked by Render)
+  const brevoKey = String(process.env.BREVO_API_KEY || '').trim();
+  const gmailUser = String(process.env.GMAIL_USER || '').trim();
+  if (brevoKey && brevoKey !== 'YOUR_BREVO_API_KEY_HERE') {
+    if (!gmailUser || gmailUser === 'YOUR_GMAIL_ADDRESS@gmail.com') {
+      throw new Error('Please set GMAIL_USER (your verified sender email) alongside BREVO_API_KEY.');
+    }
+    const resp = await fetch('https://api.brevo.com/v3/smtp/email', {
+      method: 'POST',
+      headers: {
+        'api-key': brevoKey,
+        'Content-Type': 'application/json',
+        accept: 'application/json'
+      },
+      body: JSON.stringify({
+        sender: { name: 'CodeVortex Auth', email: gmailUser },
+        to: [{ email: toEmail }],
+        subject,
+        htmlContent: htmlBody
+      })
+    });
+    const data = await resp.json().catch(() => ({}));
+    if (resp.ok) {
+      return { ok: true, provider: 'brevo_https' };
+    }
+    throw new Error(`Brevo Email API error (${resp.status}): ${data.message || JSON.stringify(data)}`);
+  }
+
+  // 3) Direct Gmail SMTP over TLS (smtp.gmail.com:465, IPv4 forced — works locally; Render Free Tier blocks port 465)
+  return new Promise((resolve, reject) => {
+    const gmailPass = String(process.env.GMAIL_APP_PASSWORD || '').replace(/\s+/g, '');
+
+    if (
+      !gmailUser ||
+      !gmailPass ||
+      gmailUser === 'YOUR_GMAIL_ADDRESS@gmail.com' ||
+      gmailPass === 'YOUR_16_CHAR_GMAIL_APP_PASSWORD'
+    ) {
+      return reject(
+        new Error(
+          'Email OTP is not configured. Add GMAIL_SCRIPT_URL (recommended for Render Free Tier) or GMAIL_USER + GMAIL_APP_PASSWORD in Environment Variables.'
+        )
+      );
+    }
 
     const rawMessage = [
       `From: "CodeVortex Auth" <${gmailUser}>`,
@@ -1045,7 +1105,8 @@ function sendGmailOtpEmail(toEmail, code, purpose) {
       host: 'smtp.gmail.com',
       port: 465,
       servername: 'smtp.gmail.com',
-      timeout: 15000
+      family: 4,
+      timeout: 12000
     });
 
     let buffer = '';
@@ -1074,8 +1135,25 @@ function sendGmailOtpEmail(toEmail, code, purpose) {
       { expect: 250, send: () => `QUIT\r\n` }
     ];
 
-    socket.on('timeout', () => finish(new Error('Gmail SMTP connection timed out. Please try again.')));
-    socket.on('error', (err) => finish(new Error(`Gmail SMTP connection error: ${err.message}`)));
+    socket.on('timeout', () =>
+      finish(
+        new Error(
+          'Gmail SMTP port 465 timed out (Render Free Tier blocks SMTP ports 465/587). Add GMAIL_SCRIPT_URL in Render Environment Variables to send free Gmail OTPs over HTTPS!'
+        )
+      )
+    );
+    socket.on('error', (err) => {
+      const detail =
+        err.message ||
+        err.code ||
+        (Array.isArray(err.errors) ? err.errors.map((e) => e.code || e.message).join(', ') : '') ||
+        'Port 465 blocked by host';
+      finish(
+        new Error(
+          `Gmail SMTP connection error (${detail}). Render Free Tier blocks outbound SMTP port 465 — set GMAIL_SCRIPT_URL to send free Gmail OTPs over HTTPS.`
+        )
+      );
+    });
 
     socket.on('data', (chunk) => {
       buffer += chunk.toString('utf8');
@@ -1084,14 +1162,13 @@ function sendGmailOtpEmail(toEmail, code, purpose) {
 
       for (const line of lines) {
         if (!line) continue;
-        // Multi-line SMTP response continues when 4th char is '-'
         if (/^\d{3}-/.test(line)) continue;
         const match = line.match(/^(\d{3})\s?(.*)$/);
         if (!match) continue;
         const statusCode = Number(match[1]);
         const current = steps[step];
         if (!current) {
-          return finish(null, { ok: true });
+          return finish(null, { ok: true, provider: 'gmail_smtp' });
         }
         const okMatch =
           statusCode === current.expect || (current.expect === 250 && statusCode === 251);
@@ -1110,7 +1187,7 @@ function sendGmailOtpEmail(toEmail, code, purpose) {
         step += 1;
         socket.write(cmd);
         if (step >= steps.length) {
-          return finish(null, { ok: true });
+          return finish(null, { ok: true, provider: 'gmail_smtp' });
         }
       }
     });
